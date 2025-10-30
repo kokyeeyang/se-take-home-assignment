@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  @apply bg-neutral-950 text-neutral-100 min-h-screen;
+}
+
+.card {
+  @apply rounded-2xl bg-neutral-900/70 border border-neutral-800 p-4 shadow;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-xl border border-neutral-700 bg-neutral-800 hover:bg-neutral-700 active:scale-95 transition;
+}
+.btn-primary {
+  @apply border-yellow-500 bg-yellow-500 text-black hover:bg-yellow-400;
+}
+.btn-danger {
+  @apply border-red-500 bg-red-600 text-white hover:bg-red-500;
+}
+.badge {
+  @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs border;
+}
+.badge-green { @apply border-emerald-500 text-emerald-400; }
+.badge-amber { @apply border-amber-500 text-amber-400; }
+.badge-blue  { @apply border-sky-500 text-sky-400; }
+.badge-gray  { @apply border-neutral-600 text-neutral-400; }
